@@ -1,0 +1,10 @@
+{
+   "led_light" : "off",
+   "blinder": "close",
+   "tv":"off",
+   "fan":"off",
+   "door":"locked",
+   "thermostat":"off",
+   "stove":"off",
+   "cctv":"off"
+}
