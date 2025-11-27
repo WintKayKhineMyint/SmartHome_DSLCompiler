@@ -20,7 +20,7 @@ when start_cooking
     turn_on stove
 
 #Night
-when time >= 17:00
+when time >= 22.00
     turn_on led_light
     close blinder
     turn_off tv
