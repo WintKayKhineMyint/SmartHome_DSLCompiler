@@ -11,7 +11,7 @@ The project demonstrates:
 * Real-time visualization using HTML + JSON
 
 ## Project Structure
-
+```
 SmartHome/
 │
 ├── rules.smarthome        # DSL file containing smart-home rules
@@ -19,7 +19,7 @@ SmartHome/
 ├── devices.json           # State output file read by the dashboard
 ├── dashboard.html         # Real-time visualization
 ├── README.md              # Project documentation
-
+```
 ## How System Works
 
 1. DSL Input (rules.smarthome)
@@ -37,21 +37,21 @@ SmartHome/
      * Automation routines
 
 2. Compiler Pipeline
-   - The compiler follows 4 main phases:
+   The compiler follows 4 main phases:
      + Lexical Analysis
      + Syntax Analysis
      + Sematic Analysis
      + Code Generation
 
 3. Python Automation Engine
-   - The generated engine
+   The generated engine
       + Stores all device states
       + Evaluates rules through execute (event,time)
       + Update devices.json
       + Demonstrates for testing.
 
 4. Real-Time Visualization
-     - The dashboard:
+   The dashboard:
         + Reads devices.json
         + Shows device icons
         + Displays ON/OFF, locked/unlocked states
