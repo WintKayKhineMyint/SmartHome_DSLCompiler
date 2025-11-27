@@ -14,10 +14,12 @@ The project demonstrates:
 ```
 SmartHome/
 │
-├── rules.smarthome        # DSL file containing smart-home rules
-├── run.py                 # Python automation engine generated from DSL
+├── rules.smarthome       # DSL file containing smart-home rules
+├── main.py               # Python automation engine generated from DSL
 ├── devices.json           # State output file read by the dashboard
-├── dashboard.html         # Real-time visualization
+├── home.html              # Real-time visualization
+├── styles.css             # css file
+├── home.js                # js file
 ├── README.md              # Project documentation
 ```
 ## How System Works
