@@ -1,0 +1,48 @@
+#Device Declarations
+device :led_light
+device : blinder
+device : tv
+device : fan
+device : door
+device : thermostat
+device : stove
+device : cctv
+
+#Morning
+when time >=6:00 and time < 10:00
+    turn_off led_light
+    turn_on thermostat
+    open blinder
+
+
+#Cooking automation
+when start_cooking
+    turn_on stove
+
+#Night
+when time >= 17:00
+    turn_on led_light
+    close blinder
+    turn_off tv
+    turn_off speaker
+    turn_on cctv
+    lock door
+
+#MovieTime
+when movie_time
+    turn_on tv
+    turn_off led_light
+    close blinder
+    turn_on thermostat
+
+#Away
+when away
+    turn_off tv
+    turn_off led_light
+    turn_off stove
+    turn_off fan
+    turn_off thermostat
+    turn_off washer
+    lock door
+    close blinder
+    turn_on cctv
