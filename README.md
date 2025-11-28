@@ -57,16 +57,15 @@ SmartHome/
         + Reads devices.json
         + Shows device icons
         + Displays ON/OFF, locked/unlocked states
-        + Lights glow when ON
       - This provides a live simulation of smart-home routines
 
-Supported Devices: led_light, door, tv, fan, thermostat, oven, washer
+Supported Devices: led_light, door, tv, fan, thermostat, oven, washer,blinder
 
 ## How to Run the Project 
 
 1. Open the project folder SmartHome/
 2. Run the automation engine "python3 run.py"
-3. See the live view in dashboad.html
+3. See the live view in home.html
   
 ## Technology Used
 + Custom DSL - .smarthome
