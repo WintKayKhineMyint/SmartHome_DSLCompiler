@@ -145,6 +145,12 @@ body{
     border-color: rgba(59, 130, 246, 0.3);
 }
 
+.device.opened .status-pill {
+    background: rgba(34, 197, 94, 0.2);
+    color: #86efac;
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
 @media (max-width: 768px) {
     body {
         padding: 20px 16px 40px;

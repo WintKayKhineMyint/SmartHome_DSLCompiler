@@ -3,7 +3,7 @@ import json
 # devices we support
 devices = {
     "led_light": "off",
-    "blinder": "close",
+    "blinder": "closed",
     "tv": "off",
     "fan": "off",
     "door": "locked",
@@ -17,7 +17,7 @@ def execute(event=None, time=None):
     if time is not None and 6.00 <= time < 10.00:
         devices["led_light"] = "on"
         devices["thermostat"] = "on"
-        devices["bliner"] = "open"
+        devices["blinder"] = "opened"
 
     if event == "start_cooking":
         devices["stove"] = "on"
@@ -52,5 +52,30 @@ def save():
         json.dump(devices, f, indent=4)
 
 
-print("\n Morning")
-execute(time=7.00)
+# # Morning
+# print("\nMorning")
+# execute(time=7.00)
+# save()
+# print("Devices updated:", devices)
+# print()
+
+# # Away mode
+# print("Away")
+# execute(event="away")
+# save()
+# print("Devices updated:", devices)
+# print()
+
+# # Movie time
+# print("Movie Time")
+# execute(event="movie_time")
+# save()
+# print("Devices updated:", devices)
+# print()
+
+# Night
+print("Night")
+execute(time=23.00)
+save()
+print("Devices updated:", devices)
+print()

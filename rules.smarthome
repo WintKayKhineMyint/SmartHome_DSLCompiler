@@ -10,7 +10,7 @@ device : cctv
 
 #Morning
 when time >=6:00 and time < 10:00
-    turn_off led_light
+    turn_on led_light
     turn_on thermostat
     open blinder
 

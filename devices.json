@@ -1,10 +1,11 @@
 {
-   "led_light" : "off",
-   "blinder": "close",
-   "tv":"off",
-   "fan":"off",
-   "door":"locked",
-   "thermostat":"off",
-   "stove":"off",
-   "cctv":"off"
+    "led_light": "on",
+    "blinder": "closed",
+    "tv": "off",
+    "fan": "off",
+    "door": "locked",
+    "thermostat": "off",
+    "stove": "off",
+    "cctv": "on",
+    "speaker": "off"
 }
