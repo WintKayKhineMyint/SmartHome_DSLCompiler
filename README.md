@@ -64,7 +64,7 @@ Supported Devices: led_light, door, tv, fan, thermostat, oven, washer,blinder
 ## How to Run the Project 
 
 1. Open the project folder SmartHome/
-2. Run the automation engine "python3 run.py"
+2. Run the automation engine "python3 main.py"
 3. See the live view in home.html
   
 ## Technology Used
